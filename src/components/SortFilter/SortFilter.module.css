@@ -1,0 +1,66 @@
+.sortFilter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sortSection {
+  position: relative;
+  margin-right: 20px;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown svg {
+  margin-left: 8px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.dropdownMenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownMenu li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.dropdownMenu li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdownMenu li.active {
+  font-weight: bold;
+  color: #fe5f1e;
+}
+
+
+
