@@ -6,7 +6,7 @@ import styles from "./SkeletonCard.module.css";
 const SkeletonCard: React.FC = () => {
   return (
     <div className={styles.skeletonCard}>
-      <Skeleton height={200} width="100%" />
+      <Skeleton height={150} width="100%" />
 
       <div className={styles.texts}>
         <Skeleton height={30} width="80%" />
