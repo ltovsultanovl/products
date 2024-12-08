@@ -34,9 +34,9 @@ const SortFilter: React.FC<SortFilterProps> = ({
             {selectedSort === "rating"
               ? "По рейтингу"
               : selectedSort === "priceAsc"
-              ? "Цена: по возрастанию"
+              ? "Цена(ASC)"
               : selectedSort === "priceDesc"
-              ? "Цена: по убыванию"
+              ? "Цена(DESC)"
               : "Категория"}
           </span>
         </div>
