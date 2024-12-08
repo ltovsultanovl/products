@@ -39,6 +39,12 @@ const ProductsPage: React.FC = () => {
     }
   }, [dispatch, products.length]);
 
+  useEffect(() => {
+    if (filter === "favorites") {
+      setCurrentPage(1);
+    }
+  }, [filter]);
+
   const categories: string[] = Array.from(
     new Set(products.map((product) => product.category))
   );
@@ -80,7 +86,7 @@ const ProductsPage: React.FC = () => {
 
   const handleCategoryChange = (category: string): void => {
     setSelectedCategory(category);
-    setCurrentPage(1); 
+    setCurrentPage(1); // Сбросить страницу при изменении категории
   };
 
   return (
@@ -150,3 +156,4 @@ const ProductsPage: React.FC = () => {
 };
 
 export default ProductsPage;
+
